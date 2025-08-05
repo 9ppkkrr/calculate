@@ -17,7 +17,7 @@ def main(page: ft.Page):
             try:
                 expression.value = str(eval(expression.value))
             except:
-                expression.value = "Error"
+                expression.value = "Error555"
         else:
             expression.value += btn
         page.update()
@@ -50,7 +50,7 @@ def main(page: ft.Page):
     for row in buttons:
         r = ft.Row(
             controls=[
-                create_button(btn, color="#2c2c2c" if btn not in "+-*/=C" else "#f57c00")
+                create_button(btn, color="#834e4e" if btn not in "+-*/=C" else "#f57c00")
                 for btn in row
             ],
             alignment=ft.MainAxisAlignment.SPACE_EVENLY,
